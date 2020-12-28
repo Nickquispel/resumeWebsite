@@ -41,7 +41,7 @@
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">
+                    <h1 class="mb-0">php
                         Nick
                         <span class="text-primary">Quispel</span>
                     </h1>
