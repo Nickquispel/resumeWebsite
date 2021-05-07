@@ -20,7 +20,7 @@
            <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Nick Quispel</span>
+                <span class="d-block d-lg-none"> {{ $resume->GetFullName() }}</span>
                 <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ URL::asset('img/profile.png') }}" alt="" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -41,12 +41,12 @@
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
-                        Nick
-                        <span class="text-primary">Quispel</span>
+                        {{ $resume->GetFirstName() }}
+                        <span class="text-primary">{{ $resume->GetLastName() }}</span>
                     </h1>
                     <div class="subheading mb-5">
-                        Ram 11 · Hellevoetsluis, 3225 EG · (+31) 6 -31786543 ·
-                        <a href="mailto:name@email.com">nickquispel@outlook.com</a>
+                        Ram 11 · Hellevoetsluis, 3225 EG · {{ $resume->GetPhone() }} ·
+                        <a href="mailto:name@email.com">{{ $resume->GetEmail() }}</a>
                     </div>
                     <p class="lead mb-5">I am an eager learning junior backend developer who's interests are with creating quality code and results for the customer. I'm assertive for trying new languages and frameworks and my goal is to create wonderful applications.  </p>
                     <div class="social-icons">
@@ -61,70 +61,38 @@
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Junior backend Developer</h3>
-                            <div class="subheading mb-3">Jorr-IT Solutions</div>
-                            <p>Developing customized Oracle apex applications for data integrations between different applications (e.g. Topdesk, Freshdesk, Exact Online, Afas, 2BA, Cloudsuite, Routit). Programming langauges: PLSQL, Javacript (nodejs), Java (Springboot), Python. </p>
+                    @foreach($resume->GetWork() as $experience)
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">{{$experience->position}}</h3>
+                                <div class="subheading mb-3">{{$experience->company}}</div>
+                                @if(!empty($experience->summary))
+                                <p>{{$experience->summary}} </p>
+                                @endif
+                            </div>
+                            <div class="flex-shrink-0"><span class="text-primary">{{$experience->startDate}} - @if(!empty($experience->endDate)){{$experience->endDate}} @else Present @endif</span></div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2019 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Internship Developer</h3>
-                            <div class="subheading mb-3">Xsarus</div>
-                            <p>Learning how to build webshops with Magento2. Programming languages: PHP,Javascript,HTML,CSS.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2019 - December 2019</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Account manager</h3>
-                            <div class="subheading mb-3">Gasmeetstation</div>
-                            <p>Creating the most optimal customer serice for several activities (Gas measurements, transport, customs inspections). </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">November 2018 - July 2019</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Account manager</h3>
-                            <div class="subheading mb-3">Neele-Vat Logistics</div>
-                            <p>Creating the most optimal customer serice for several activities (customs clearence, customs inspections, transport, Dangerous goods regulations). </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">January 2015 - August 2017</span></div>
-                    </div>
-                </div>
+                    @endforeach
             </section>
             <hr class="m-0" />
             <!-- Education-->
             <section class="resume-section" id="education">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Education</h2>
+                    @foreach($resume->GetEducation() as $education)
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">AALO</h3>
-                            <div class="subheading mb-3">Fitness Instructor / Personal Trainer </div>
+                            <h3 class="mb-0">{{$education->institution}}</h3>
+                            <div class="subheading mb-3">{{$education->area}}</div>
+                            @if(!empty($education->studyType))
+                            <div class="subheading mb-3">{{$education->studyType}}</div>
+                            @endif
                             <!-- <div>Computer Science - Web Development Track</div>
                             <p>GPA: 3.23</p> -->
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2020 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">{{$education->startDate}} - @if(!empty($education->endDate)){{$education->endDate}} @else Present @endif</span></div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">LOI</h3>
-                            <div class="subheading mb-3">Application and Media Development</div>
-                            <!-- <p>GPA: 3.56</p> -->
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 2018 - october 2020</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Higschool of Rotterdam</h3>
-                            <div class="subheading mb-3">Logistics & Economics</div>
-                            <div>Bachelor of economics</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2010 - July 2014</span></div>
-                        </div>
+                    @endforeach
                 </div>
             </section>
             <hr class="m-0" />
@@ -142,7 +110,7 @@
                         <li class="list-inline-item"><i class="fab fa-npm"></i></li>
                         <li class="list-inline-item"><i class="fab fa-python"></i></li>
                         <li class="list-inline-item"><i class="fab fa-java"></i></li>
-                        
+
                     </ul>
                     <!-- <div class="subheading mb-3">Workflow</div>
                     <ul class="fa-ul mb-0">
@@ -183,6 +151,6 @@
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
-        <script src="{{URL::asset('js/scripts.js')}}"></script> 
+        <script src="{{URL::asset('js/scripts.js')}}"></script>
     </body>
 </html>

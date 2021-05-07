@@ -1,0 +1,339 @@
+{
+  "basics": {
+    "name": "Nick Quispel",
+    "label": "Software Developer & Personal Trainer",
+    "picture": "",
+    "email": "nickquispel@outlook.com",
+    "phone": "+31631786543",
+    "website": "https://github.com/Nickquispel",
+    "summary": "",
+    "location": {
+      "countryCode": "US",
+      "address": "Netherlands"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "nickquispel",
+        "url": "https://www.linkedin.com/in/nickquispel/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "WebNL creative studios",
+      "endDate": "",
+      "highlights": [],
+      "position": "Traineeship Developer",
+      "startDate": "2021-02-28",
+      "summary": "Creating unique customer specific web applications. Mainly focused on:\n- Zend framework \n- Laravel framework\nAnd using the following languages:\n- PHP\n- Vue.js\n- JS(Grunt/Gulp/Webpack)\n- CSS & HTML",
+      "website": "https://www.linkedin.com/company/webnl/"
+    },
+    {
+      "company": "Jorr-IT Solutions",
+      "endDate": "2021-02-28",
+      "highlights": [],
+      "position": "Junior Software Developer",
+      "startDate": "2019-08-31",
+      "summary": "Creating custom  interface connections  between all kinds of API endpoints. Also worked on customer specific Android applications. Mainly focused on:\n- Nodejs \n- Oracle Database \n- PL/SQL\n- Java\n- Docker\n- Linux \n\nDeveloped connections with:\n- Freshdesk\n- Topdesk\n- Clockify\n- RoutIT\n- Afas\n- Exact Online\n- Webfleet\n- Unit4 \n- Quantore\n- 2BA\nAnd several other connections",
+      "website": "https://www.linkedin.com/company/jorr-it-solutions/"
+    },
+    {
+      "company": "XSARUS | Digital Commerce",
+      "endDate": "2019-12-31",
+      "highlights": [],
+      "position": "Junior Software Developer",
+      "startDate": "2019-08-31",
+      "summary": "Learning the aspects and the concepts of programming, focused on:\n- Magento 2 framework\n- PHP\n- HTML & CSS\n- Symfony framework",
+      "website": "https://www.linkedin.com/company/xsarus-e-development-&-consulting/"
+    },
+    {
+      "company": "Gasmeetstation Nederland BV",
+      "endDate": "2019-07-31",
+      "highlights": [],
+      "position": "Forwarder / Account manager",
+      "startDate": "2018-11-30",
+      "summary": "Delivering the most optimal customer service for the customer regarding several logistics operations for instance:\n- Gas measurements\n- Container and trailer transport\n- Loading and unloading containers and trailers with gas masks or specific protection",
+      "website": "https://www.linkedin.com/company/gasmeetstation-nederland-bv/"
+    },
+    {
+      "company": "JMK",
+      "endDate": "2018-08-31",
+      "highlights": [],
+      "position": "laborer",
+      "startDate": "2018-05-31",
+      "summary": "Construction work in Yeppoon and Rockhampton",
+      "website": ""
+    },
+    {
+      "company": "Emu’s Beach Resort",
+      "endDate": "2018-04-30",
+      "highlights": [],
+      "position": "All-Round Employer",
+      "startDate": "2018-01-31",
+      "website": ""
+    },
+    {
+      "company": "FNQ Orchard Services Pty Ltd",
+      "endDate": "2017-12-31",
+      "highlights": [],
+      "position": "Fruit picking",
+      "startDate": "2017-11-30",
+      "summary": "Picking fruit",
+      "website": ""
+    },
+    {
+      "company": "Neele-Vat Logistics",
+      "endDate": "2017-08-31",
+      "highlights": [],
+      "position": "Account Manager",
+      "startDate": "2015-01-31",
+      "summary": "Het verzorgen van optimale service aan de klant waaronder: \n- Fiscaal vertegenwoordiging \n- Zeevracht \n- ADR regeling \n- Warehousing \n- Transport \n- Douane afhandeling\n- Facturatie \n- Klachtafhandeling \n- Kritische prestatie indicatoren",
+      "website": "https://www.linkedin.com/company/neelevat/"
+    },
+    {
+      "company": "VAT Logistics",
+      "endDate": "2014-12-31",
+      "highlights": [],
+      "position": "Account Manager",
+      "startDate": "2014-07-31",
+      "summary": "Het verzorgen van service aan de klant waaronder: \n- Warehousing \n- Transport \n- Douane \n- Facturatie \n- Procesverbetering",
+      "website": "https://www.linkedin.com/company/neelevat/"
+    },
+    {
+      "company": "VAT Logistics",
+      "endDate": "2014-08-31",
+      "highlights": [],
+      "position": "Student Internship",
+      "startDate": "2014-02-28",
+      "summary": "Een onderbouwde adviesrapport geschreven waarmee een nieuwe indeling van klanten in het magazijn geïmplementeerd kan worden (Procesanalyse)",
+      "website": "https://www.linkedin.com/company/neelevat/"
+    },
+    {
+      "company": "Hogeschool Rotterdam",
+      "endDate": "2014-08-31",
+      "highlights": [],
+      "position": "Bachelor Student",
+      "startDate": "2010-08-31",
+      "summary": "Logistics & Economics",
+      "website": "https://www.linkedin.com/school/hogeschool-rotterdam/"
+    },
+    {
+      "company": "DFDS",
+      "endDate": "2013-02-28",
+      "highlights": [],
+      "position": "Student Internship",
+      "startDate": "2012-09-30",
+      "summary": "het verhogen van het Yield (winst) management door klanten niet alleen te beoordelen op  de omzet maar ook te kijken naar aantal klachten, de duur van betalingen en andere onderwerpen die niet direct met de omzet te maken hebben (Procesanalyse).",
+      "website": "https://www.linkedin.com/company/dfds/"
+    },
+    {
+      "company": "G.S.G. Helinium",
+      "endDate": "2010-05-31",
+      "highlights": [],
+      "position": "Student havo",
+      "startDate": "2005-07-31",
+      "website": ""
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "LOI",
+      "area": "Applicatie en Mediaontwikkelaar",
+      "studyType": "",
+      "startDate": "2018-12-31",
+      "endDate": "2020-12-31",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Hogeschool Rotterdam",
+      "area": "Logistics & economics",
+      "studyType": "Bachelor of Business Administration (B.B.A.)",
+      "startDate": "2010-12-31",
+      "endDate": "2014-12-31",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "AALO",
+      "area": "Fitness Instructor / Small Group Trainer",
+      "studyType": "Fitness instructor A",
+      "startDate": "2020-12-31",
+      "endDate": "2020-12-31",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "AALO",
+      "area": "Master Trainer / Personal Trainer",
+      "studyType": "Fitness Instructor B",
+      "startDate": "2020-12-31",
+      "endDate": "2021-12-31",
+      "gpa": "",
+      "courses": []
+    },
+    {
+      "institution": "Helinium",
+      "area": "Economics and society",
+      "studyType": "HAVO",
+      "startDate": "2005-12-31",
+      "endDate": "2010-12-31",
+      "gpa": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Linux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PL/SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Supply Chain Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TopDesk",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Dutch",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Magento",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "HTML",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Word",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "AFAS Software",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SAP ERP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Logistics",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Marketing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "CSS",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Operations Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Excel",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Exact Online",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Office",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Node.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "English",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "REST API",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Java",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Unix",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Oracle SQL Developer",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PowerPoint",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Customer Service",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "en",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [],
+  "references": []
+}
