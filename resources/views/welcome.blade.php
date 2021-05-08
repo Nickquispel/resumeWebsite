@@ -18,23 +18,9 @@
     <body id="page-top">
 
            <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none"> {{ $resume->GetFullName() }}</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="{{ URL::asset('img/profile.png') }}" alt="" /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ url('login') }}">Login</a></li>
-                </ul>
-            </div>
-        </nav>
+
+       @include('partials.navigation')
+
         <!-- Page Content-->
         <div class="container-fluid p-0">
             <!-- About-->
@@ -53,7 +39,9 @@
                         <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/nickquispel/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" target="_blank" href="https://github.com/Nickquispel"><i class="fab fa-github"></i></a>
                         <a class="social-icon" target="_blank" href="https://www.facebook.com/nick.quispel"><i class="fab fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://www.ereps.eu/member-profile/85053"><i><img  class="ereps"  width="56" src="{{URL::asset('img/EREPS_Professional_2021.png')}}"/></i> </a>
                     </div>
+
                 </div>
             </section>
             <hr class="m-0" />
@@ -70,7 +58,7 @@
                                 <p>{{$experience->summary}} </p>
                                 @endif
                             </div>
-                            <div class="flex-shrink-0"><span class="text-primary">{{$experience->startDate}} - @if(!empty($experience->endDate)){{$experience->endDate}} @else Present @endif</span></div>
+                            <div class="flex-shrink-0"><span class="text-primary">{{date('d-m-Y', strtotime($experience->startDate))}} till @if(!empty($experience->endDate)){{date('d-m-Y', strtotime($experience->endDate))}} @else Present @endif</span></div>
                         </div>
                     @endforeach
             </section>
@@ -90,7 +78,7 @@
                             <!-- <div>Computer Science - Web Development Track</div>
                             <p>GPA: 3.23</p> -->
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">{{$education->startDate}} - @if(!empty($education->endDate)){{$education->endDate}} @else Present @endif</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">{{date('d-m-Y', strtotime($education->startDate))}} till @if(!empty($education->endDate)){{date('d-m-Y', strtotime($education->endDate))}} @else Present @endif</span></div>
                     </div>
                     @endforeach
                 </div>
@@ -143,6 +131,11 @@
             </section>
             <hr class="m-0" />
             <!-- Awards-->
+
+            <section class="resume-section" id="contact">
+                <div class="resume-section-content">
+                @include('forms.contact')
+                </div>
             </section>
         </div>
         <!-- Bootstrap core JS-->

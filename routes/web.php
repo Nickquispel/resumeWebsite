@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 
+Route::post('/', [\App\Http\Controllers\FormsController::class, 'ContactUsForm'])->name('contact.store');
+
 Auth::routes();
 
 Route::get('/scripts', function () {
