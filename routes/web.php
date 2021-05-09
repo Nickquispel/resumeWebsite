@@ -21,7 +21,8 @@ Route::post('/', [\App\Http\Controllers\FormsController::class, 'ContactUsForm']
 
 Auth::routes();
 
-Route::get('/scripts', function () {
-    return view('scripts');
-})->middleware('auth');
+Route::get('/admin', [App\Http\Controllers\HomeController::class, 'admin'])->middleware('auth');
+
+Route::get('/admin/{id}', [App\Http\Controllers\FormsController::class,'delete'])->name('contact.delete');
+
 

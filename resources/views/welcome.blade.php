@@ -38,7 +38,6 @@
                     <div class="social-icons">
                         <a class="social-icon" target="_blank" href="https://www.linkedin.com/in/nickquispel/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" target="_blank" href="https://github.com/Nickquispel"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" target="_blank" href="https://www.facebook.com/nick.quispel"><i class="fab fa-facebook-f"></i></a>
                         <a target="_blank" href="https://www.ereps.eu/member-profile/85053"><i><img  class="ereps"  width="56" src="{{URL::asset('img/EREPS_Professional_2021.png')}}"/></i> </a>
                     </div>
 

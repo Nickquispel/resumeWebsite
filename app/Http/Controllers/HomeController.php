@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use App\Models\LinkedinResume;
 
 
@@ -26,5 +27,14 @@ class HomeController extends Controller
     {
         $linkedinResume = new LinkedinResume();
         return view('welcome',['resume' => $linkedinResume]);
+    }
+
+    public function admin()
+    {
+        $contacts = Contact::all();
+        $linkedinResume = new LinkedinResume();
+        return view('admin',[
+            'contacts' => $contacts,
+            'resume' => $linkedinResume]);
     }
 }

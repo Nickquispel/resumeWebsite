@@ -44,4 +44,14 @@ class FormsController extends Controller
 
         return redirect(url()->previous().'#contact')->with('success', 'I have received your message and would like to thank you for writing.');
     }
+
+    public function delete(string $id)
+    {
+        $contact = Contact::findOrFail($id);
+
+        $contact->delete();
+
+        return redirect('/admin');
+
+    }
 }
