@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::post('/', [\App\Http\Controllers\FormsController::class, 'ContactUsForm'])->name('contact.store');
 
@@ -25,4 +26,7 @@ Route::get('/admin', [App\Http\Controllers\HomeController::class, 'admin'])->mid
 
 Route::get('/admin/{id}', [App\Http\Controllers\FormsController::class,'delete'])->name('contact.delete');
 
+Route::fallback(function () {
+    return response()->view('errors.404', [], 404);
+});
 
