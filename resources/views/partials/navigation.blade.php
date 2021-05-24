@@ -15,19 +15,19 @@
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('home')}}#skills">Skills</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('home')}}#interests">Interests</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('home')}}#contact">Contact</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('home') }}#login">Login</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('home')}}#login">Login</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://www.canva.com/design/DADVUQEex7U/7XPBVKBfuQCcWl7yyreZnw/view?utm_content=DADVUQEex7U&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" target="_blank">CV</a></li>
         @else
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ url('admin') }}">admin</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                        {{ __('Logout') }}
-                    </a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ url('admin') }}">admin</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                                    document.getElementById('logout-form').submit();">
+                    {{ __('Logout') }}
+                </a></li>
 
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                    @csrf
-                </form>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
         @endif
         </ul>
     </div>

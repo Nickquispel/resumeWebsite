@@ -77,7 +77,7 @@
                     <h2 class="mb-5">Skills</h2>
                     <div class="subheading mb-3">Programming Languages & Tools</div>
                     <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><a href="https://github.com/Nickquispel/resumeWebsite" target="_blank "><i class="fab fa-html5"></i></a></li>
                         <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
                         <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
                         <li class="list-inline-item"><i class="fab fa-php"></i></li>
@@ -121,13 +121,13 @@
 
             <section class="resume-section" id="contact">
                 <div class="resume-section-content">
-                @include('forms.contact')
+                    @include('forms.contact')
                 </div>
             </section>
 
             <section class="resume-section" id="login">
                 <div class="resume-section-content">
-                @include('login.login')
+                    @include('login.login')
                 </div>
             </section>
         </div>
