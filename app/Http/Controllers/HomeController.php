@@ -26,7 +26,7 @@ class HomeController extends Controller
     public function index()
     {
         $linkedinResume = new LinkedinResume();
-        return view('welcome',['resume' => $linkedinResume]);
+        return view('home.welcome',['resume' => $linkedinResume]);
     }
 
     public function admin()

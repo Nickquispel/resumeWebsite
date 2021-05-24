@@ -5,3 +5,4 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Core theme JS-->
         <script src="{{URL::asset('js/scripts.js')}}"></script>
+        <link rel="stylesheet" href="{{ URL::asset('css/main.css') }}" type="text/css">

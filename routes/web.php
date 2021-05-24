@@ -20,11 +20,15 @@ Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('ho
 
 Route::post('/', [\App\Http\Controllers\FormsController::class, 'ContactUsForm'])->name('contact.store');
 
-Auth::routes();
+Auth::routes([
+    'register' => false, // Registration Routes...
+    'reset' => false, // Password Reset Routes...
+    'verify' => false, // Email Verification Routes...
+  ]);
 
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'admin'])->middleware('auth');
 
-Route::get('/admin/{id}', [App\Http\Controllers\FormsController::class,'delete'])->name('contact.delete');
+Route::get('/admin/{id}', [App\Http\Controllers\FormsController::class,'delete'])->name('contact.delete')->middleware('auth');
 
 Route::fallback(function () {
     return response()->view('errors.404', [], 404);

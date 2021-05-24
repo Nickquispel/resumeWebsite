@@ -124,6 +124,12 @@
                 @include('forms.contact')
                 </div>
             </section>
+
+            <section class="resume-section" id="login">
+                <div class="resume-section-content">
+                @include('login.login')
+                </div>
+            </section>
         </div>
         @include('partials.script')
     </body>
