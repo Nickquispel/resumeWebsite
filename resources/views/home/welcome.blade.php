@@ -19,8 +19,8 @@
                         <span class="text-primary">{{ $resume->GetLastName() }}</span>
                     </h1>
                     <div class="subheading mb-5">
-                        Ram 11 · Hellevoetsluis, 3225 EG · {{ $resume->GetPhone() }} ·
-                        <a href="mailto:name@email.com">{{ $resume->GetEmail() }}</a>
+                        Ram 11 · Hellevoetsluis, 3225 EG · <a target="_blank" href="tel:{{$resume->GetPhone()}}">{{ $resume->GetPhone() }} </a> ·
+                        <a href="mailto:{{ $resume->GetEmail() }}">{{ $resume->GetEmail() }}</a>
                     </div>
                     <p class="lead mb-5">I am an eager learning junior backend developer who's interests are with creating quality code and results for the customer. I'm assertive for trying new languages and frameworks and my goal is to create wonderful applications.  </p>
                     <div class="social-icons">
