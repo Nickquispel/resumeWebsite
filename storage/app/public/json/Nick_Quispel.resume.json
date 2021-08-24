@@ -21,8 +21,17 @@
   },
   "work": [
     {
-      "company": "WebNL creative studios",
+      "company": "Vargar",
       "endDate": "",
+      "highlights": [],
+      "position": "Software Engineer",
+      "startDate": "2021-07-31",
+      "summary": "Freelance Software developer",
+      "website": "https://www.linkedin.com/company/vargar/"
+    },
+    {
+      "company": "WebNL creative studios",
+      "endDate": "2021-07-31",
       "highlights": [],
       "position": "Traineeship Developer",
       "startDate": "2021-02-28",
